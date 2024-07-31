@@ -49,6 +49,10 @@ const Sidebar = () => {
         <div>
             <Link to="/custom/local-storage">Use Custom Local Storage</Link>
         </div>
+        <h4>Concepts</h4>
+        <div>
+            <Link to="/concepts/reduce-renders-using-ref">Reduce renders using Ref</Link>
+        </div>
     </div>
   )
 }

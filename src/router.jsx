@@ -15,6 +15,8 @@ import UseTransitionHook from "./hook-components/UseTransitionHook";
 import UseDeferredValueHook from "./hook-components/UseDeferredValueHook";
 import UseLayoutEffect from "./hook-components/UseLayoutEffect";
 import CustomLocalStorageHook from "./hook-components/CustomLocalStorageHook";
+import OtherConceptsContainer from "./other-react-concepts/OtherConceptsContainer";
+import Container from "./other-react-concepts/ReduceRendersUsingRef/Container";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
@@ -30,6 +32,9 @@ export const router = createBrowserRouter(
       <Route path="/useDeferredValue" element={<UseDeferredValueHook />} />
       <Route path="/useLayoutEffect" element={<UseLayoutEffect />} />
       <Route path="/custom/local-storage" element={<CustomLocalStorageHook />} />
+      <Route path="/concepts" element={<OtherConceptsContainer />}>
+        <Route path="reduce-renders-using-ref" element={<Container />} />
+      </Route>
     </Route>
   )
 );
